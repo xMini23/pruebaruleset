@@ -17,4 +17,4 @@ rules:
       function: pattern
       functionOptions:
         match: ^(?:internal|client|both)$
-    severity: error
+     severity: error
