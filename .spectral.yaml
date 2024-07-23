@@ -9,12 +9,12 @@ rules:
       functionOptions:
         min: 3
         max: 3
-
+     
   validate-status:
     description: Comprueba que x-app-type tiene un valor valido
+    severity: error
     given: $.['x-app-type']
     then:
       function: pattern
       functionOptions:
         match: ^(?:internal|client|both)$
-     severity: error
