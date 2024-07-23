@@ -1,15 +1,4 @@
 rules:
-  x-exampleAnnotation-length:
-    description: "x-app-bankinter debe tener una longitud mínima y máxima de 3 caracteres."
-    message: "x-app-bankinter debe tener exactamente 3 caracteres."
-    severity: error
-    given: "$.['x-app-bankinter']"
-    then:
-      function: length
-      functionOptions:
-        min: 3
-        max: 3
-
   validate-status:
     description: Comprueba que x-app-type tiene un valor valido
     given: $.['x-app-type']
