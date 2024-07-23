@@ -7,3 +7,4 @@ rules:
       functionOptions:
         match: ^(?:internal|client|both)$
     severity: error
+    
